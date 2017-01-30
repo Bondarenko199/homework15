@@ -1,0 +1,46 @@
+body {
+  font: 1rem "Roboto-Regular", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.blue-text {
+  color: #017dfb;
+}
+
+.main-button {
+  line-height: 50px;
+  padding: 0 50px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #017dfb;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.nav-button {
+  color: #a5aec2;
+}
+
+//body {
+//  padding: 0 2rem;
+//}

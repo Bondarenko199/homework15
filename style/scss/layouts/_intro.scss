@@ -1,0 +1,14 @@
+.intro {
+  height: 100vh;
+  position: relative;
+  background: url("../../images/background/intro_bg.jpg") 50% 50% no-repeat;
+  @include background-size(cover);
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -25%));
+  text-align: center;
+}

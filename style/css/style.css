@@ -1,0 +1,255 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/roboto/Roboto-Regular/Roboto-Regular.eot") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular/Roboto-Regular.svg") format("svg");
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/roboto/Roboto-Bold/Roboto-Bold.eot") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.ttf") format("truetype"), url("../fonts/roboto/Roboto-Bold/Roboto-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: 'Roboto-Black';
+  src: url("../fonts/roboto/Roboto-Black/Roboto-Black.eot") format("embedded-opentype"), url("../fonts/roboto/Roboto-Black/Roboto-Black.woff") format("woff"), url("../fonts/roboto/Roboto-Black/Roboto-Black.ttf") format("truetype"), url("../fonts/roboto/Roboto-Black/Roboto-Black.svg") format("svg");
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url("../fonts/roboto/Roboto-Thin/Roboto-Thin.eot") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin/Roboto-Thin.ttf") format("truetype"), url("../fonts/roboto/Roboto-Thin/Roboto-Thin.svg") format("svg");
+}
+@font-face {
+  font-family: 'Molle-Regular';
+  src: url("../fonts/molle/Molle-Regular.eot") format("embedded-opentype"), url("../fonts/molle/Molle-Regular.woff") format("woff"), url("../fonts/molle/Molle-Regular.ttf") format("truetype"), url("../fonts/molle/Molle-Regular.svg") format("svg");
+}
+body {
+  font: 1rem "Roboto-Regular", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.blue-text {
+  color: #017dfb;
+}
+
+.main-button {
+  line-height: 50px;
+  padding: 0 50px;
+  border: none;
+  border-radius: 25px;
+  background: #fff;
+  color: #017dfb;
+  cursor: pointer;
+}
+.main-button:focus {
+  outline: none;
+}
+
+.nav-button {
+  color: #a5aec2;
+}
+
+.main-nav {
+  padding: 100px 0 0;
+  margin-bottom: 20px;
+}
+.main-nav .container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.header-head {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.main-logo {
+  width: 86px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+}
+
+.nav-button {
+  line-height: 35px;
+  padding: 0 20px;
+  display: block;
+  border-radius: 25px;
+  -moz-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.nav-button:hover {
+  background: #fff;
+  -moz-box-shadow: 0 0 60px rgba(1, 125, 251, 0.5);
+  -webkit-box-shadow: 0 0 60px rgba(1, 125, 251, 0.5);
+  box-shadow: 0 0 60px rgba(1, 125, 251, 0.5);
+  color: #017dfb;
+}
+
+.intro {
+  height: 100vh;
+  position: relative;
+  background: url("../../images/background/intro_bg.jpg") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -25%);
+  -ms-transform: translate(-50%, -25%);
+  -webkit-transform: translate(-50%, -25%);
+  transform: translate(-50%, -25%);
+  text-align: center;
+}
+
+@media (min-width: 1620px) {
+  .container {
+    max-width: 1600px;
+    width: 100%;
+  }
+}
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    width: 100%;
+  }
+
+  .main-nav .container {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .header-head {
+    width: 100%;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-list {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .nav-button {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+}
