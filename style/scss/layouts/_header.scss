@@ -1,3 +1,7 @@
+.main-header {
+  background: rgba(255,255,255, .9);
+}
+
 .main-nav {
   padding: 100px 0 0;
   margin-bottom: 20px;
@@ -25,15 +29,56 @@
   overflow: hidden;
 }
 
+.menu-button {
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  background: none;
+  border: none;
+  display: none;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 100%;
+  height: 2px;
+  margin: 6px 0;
+  display: block;
+  background: #017dfb;
+  @include transition(.3s ease-in-out);
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px) ;
+  transform: rotate(-45deg) translate(-5px, 4px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px) ;
+  transform: rotate(45deg) translate(-7px, -6px) ;
+}
+
 .nav-button {
   line-height: 35px;
   padding: 0 20px;
   display: block;
   border-radius: 25px;
+  text-align: center;
   @include transition(.3s ease-in-out);
   &:hover {
     background: #fff;
     @include box-shadow(0 0 60px rgba(1, 125, 251, .5));
     color: #017dfb;
+  }
+}
+
+.intro-text {
+  h2 {
+    font: 9rem "Molle-Regular", sans-serif;
   }
 }

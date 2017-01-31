@@ -1,0 +1,39 @@
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 100px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+.owl-prev {
+  background: url("../../images/background/left-arrow.png") 50% 50% no-repeat;
+}
+
+.owl-next {
+  right: 0;
+  background: url("../../images/background/right-arrow.png") 50% 50% no-repeat;
+}
+
+.owl-dots {
+  width: 35px;
+  height:10px;
+  margin: 30px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.owl-dot {
+  width: 5px;
+  height: 5px;
+  margin: 0 3px;
+  display: inline-block;
+  float: left;
+  background: #fff;
+  @include border-radius(50%);
+  &.active {
+    background: #0dcfff;
+  }
+}

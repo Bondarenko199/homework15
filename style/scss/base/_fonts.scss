@@ -37,3 +37,9 @@
        url('../fonts/molle/Molle-Regular.ttf')  format('truetype'),
        url('../fonts/molle/Molle-Regular.svg') format('svg');
 }
+
+@font-face {
+  font-family: 'Streetwear';
+  src: url('../fonts/streetwear/Streetwear.otf')  format('opentype'),
+       url('../fonts/streetwear/Streetwear.ttf')  format('truetype');
+}

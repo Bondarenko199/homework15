@@ -1,9 +1,15 @@
 body {
   font: 1rem "Roboto-Regular", sans-serif;
+  color: #fff;
 }
 
 a {
   text-decoration: none !important;
+  color: inherit;
+}
+
+button:focus {
+  outline: none;
 }
 
 .container {
@@ -24,6 +30,10 @@ a {
   color: #017dfb;
 }
 
+.gray-bg {
+  background: #f9f9f9;
+}
+
 .main-button {
   line-height: 50px;
   padding: 0 50px;
@@ -32,9 +42,6 @@ a {
   background: #fff;
   color: #017dfb;
   cursor: pointer;
-  &:focus {
-    outline: none;
-  }
 }
 
 .nav-button {

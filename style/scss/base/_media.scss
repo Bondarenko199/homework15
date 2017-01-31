@@ -38,6 +38,15 @@
   .nav-list {
     @include flex-direction(column);
     @include align-items(center);
+    padding-bottom: 25px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 155px;
+    background: rgba(255,255,255, .9);
+    z-index: 100;
   }
   .nav-button {
     margin-bottom: 20px;

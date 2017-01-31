@@ -5,9 +5,12 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "base/owl-reset";
 @import "base/fonts";
 
 @import "base/core";
 @import "layouts/header";
 @import "layouts/intro";
+@import "layouts/slider";
+@import "layouts/footer";
 @import "base/media";
