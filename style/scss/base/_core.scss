@@ -18,6 +18,11 @@ button:focus {
   margin: 0 auto;
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .display-none {
   display: none;
 }
@@ -26,12 +31,20 @@ button:focus {
   text-transform: uppercase;
 }
 
+.spacing {
+  letter-spacing: .4rem;
+}
+
 .blue-text {
   color: #017dfb;
 }
 
 .gray-bg {
   background: #f9f9f9;
+}
+
+.gray-text {
+  color: #a5aec2;
 }
 
 .main-button {
@@ -43,11 +56,3 @@ button:focus {
   color: #017dfb;
   cursor: pointer;
 }
-
-.nav-button {
-  color: #a5aec2;
-}
-
-//body {
-//  padding: 0 2rem;
-//}

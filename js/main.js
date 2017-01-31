@@ -1,13 +1,13 @@
 $(function() {
 
     $('#owl-one').owlCarousel({
-        items:1,
-        loop:true,
-        nav:true,
-        dots:true,
-        dotsEach:true,
-        // navClass:["custom-owl-prev", "custom-owl-next"],
-        navText:[],
+        items: 1,
+        startPosition: 1,
+        loop: true,
+        nav: true,
+        dots: true,
+        dotsEach: true,
+        navText: [],
         smartSpeed: 1000
     });
 

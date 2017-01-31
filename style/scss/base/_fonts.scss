@@ -43,3 +43,9 @@
   src: url('../fonts/streetwear/Streetwear.otf')  format('opentype'),
        url('../fonts/streetwear/Streetwear.ttf')  format('truetype');
 }
+
+@font-face {
+  font-family: 'Myriadpro-Regular';
+  src: url("../fonts/myriadpro/MyriadPro-Regular.otf") format('opentype'),
+       url("../fonts/myriadpro/MyriadPro-Regular.ttf") format('truetype');
+}

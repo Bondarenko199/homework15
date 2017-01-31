@@ -127,6 +127,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'Streetwear';
   src: url("../fonts/streetwear/Streetwear.otf") format("opentype"), url("../fonts/streetwear/Streetwear.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'Myriadpro-Regular';
+  src: url("../fonts/myriadpro/MyriadPro-Regular.otf") format("opentype"), url("../fonts/myriadpro/MyriadPro-Regular.ttf") format("truetype");
+}
 body {
   font: 1rem "Roboto-Regular", sans-serif;
   color: #fff;
@@ -147,12 +151,21 @@ button:focus {
   margin: 0 auto;
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 .display-none {
   display: none;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.spacing {
+  letter-spacing: .4rem;
 }
 
 .blue-text {
@@ -163,6 +176,10 @@ button:focus {
   background: #f9f9f9;
 }
 
+.gray-text {
+  color: #a5aec2;
+}
+
 .main-button {
   line-height: 50px;
   padding: 0 50px;
@@ -171,10 +188,6 @@ button:focus {
   background: #fff;
   color: #017dfb;
   cursor: pointer;
-}
-
-.nav-button {
-  color: #a5aec2;
 }
 
 .main-header {
@@ -294,6 +307,105 @@ button:focus {
   -webkit-transform: translate(-50%, -25%);
   transform: translate(-50%, -25%);
   text-align: center;
+}
+
+.hotels {
+  padding: 80px 0;
+}
+
+.hotels-text {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto 80px;
+  color: #bfc5d3;
+  text-align: center;
+}
+
+.hotels-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.hotel-link-container {
+  width: 370px;
+  height: 440px;
+  padding: 0 15px;
+  margin-bottom: 55px;
+}
+
+.hotel-link {
+  height: 100%;
+  display: block;
+  -moz-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-img-container {
+  height: 75%;
+  background: #c7c7c7;
+}
+
+.hotel-description {
+  height: 25%;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.hotel-name,
+.hotel-price {
+  padding: 5%;
+}
+
+.hotel-name {
+  width: 65%;
+}
+.hotel-name .name {
+  display: block;
+  margin-bottom: 6%;
+  font: 1.1rem "Myriadpro-Regular", sans-serif;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url("../../images/background/Star.png") 50% 50% no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.hotel-price {
+  width: 35%;
+  text-align: right;
+}
+.hotel-price .price {
+  display: block;
+  font: 2.2rem "Roboto-Thin", sans-serif;
+}
+.hotel-price .days {
+  display: block;
+  font-size: .9rem;
+}
+
+.hotel-button {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -moz-transform: translate(-50%, 40%);
+  -ms-transform: translate(-50%, 40%);
+  -webkit-transform: translate(-50%, 40%);
+  transform: translate(-50%, 40%);
+  -moz-box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
 }
 
 .slider {
