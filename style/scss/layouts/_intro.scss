@@ -1,14 +1,77 @@
 .intro {
   height: 100vh;
-  position: relative;
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(space-between);
   background: url("../../images/background/intro_bg.jpg") 50% 50% no-repeat;
   @include background-size(cover);
 }
 
 .intro-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  @include transform(translate(-50%, -25%));
   text-align: center;
+  p {
+    margin-bottom: 3vh;
+  }
+}
+
+.form-container {
+  padding: 2vh 0;
+  .container {
+    @include display-flex();
+    @include flex-direction(column);
+    @include align-items(center);
+  }
+}
+
+.search{
+  @include transition(.3s ease-in-out);
+  &:hover {
+  @include box-shadow(0 0 20px rgba(255, 255, 255, .5));
+  }
+}
+
+
+.inputs-list {
+  @include display-flex();
+  @include align-items(center);
+}
+
+.city:before {
+  background: url("../../images/background/city.png") 50% 50% no-repeat;
+}
+
+.check-in:before {
+  background: url("../../images/background/check-in.png") 50% 50% no-repeat;
+}
+
+.check-out:before {
+  background: url("../../images/background/check-out.png") 50% 50% no-repeat;
+}
+
+.rooms:before {
+  background: url("../../images/background/rooms.png") 50% 50% no-repeat;
+}
+
+.adults:before {
+  background: url("../../images/background/adults.png") 50% 50% no-repeat;
+}
+
+.children:before {
+  background: url("../../images/background/children.png") 50% 50% no-repeat;
+}
+
+.stars:before {
+  background: url("../../images/background/star_form.png") 50% 50% no-repeat;
+}
+
+.submit {
+  width: 50px;
+  height: 50px;
+  border: none;
+  @include border-radius(50%);
+  background: #fff url("../../images/background/search.png") 50% 50% no-repeat;
+  @include transition(.3s ease-in-out);
+  &:hover {
+    @include box-shadow(0 0 30px rgba(255, 255, 255, .8));
+  }
 }

@@ -17,11 +17,43 @@
     max-width: 960px;
     width: 100%;
   }
+
+  .intro {
+    height: auto;
+  }
+
+  .intro-text {
+    margin: 27vh auto;
+  }
+
+  .search {
+    display: block;
+  }
+
+  .inputs-list {
+    display: none;
+    @include flex-direction(column);
+  }
+
+  .popular-places-list {
+    @include flex-direction(column);
+    @include align-items(center);
+    li {
+      width: 100% !important;
+    }
+  }
+
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots{
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
   .container {
-    max-width: 720px;
     width: 100%;
   }
   .main-nav {

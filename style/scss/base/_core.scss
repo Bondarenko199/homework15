@@ -8,6 +8,10 @@ a {
   color: inherit;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 button:focus {
   outline: none;
 }
@@ -27,6 +31,16 @@ button:focus {
   display: none;
 }
 
+.display-flex {
+  @include display-flex(flex !important);
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -37,6 +51,10 @@ button:focus {
 
 .blue-text {
   color: #017dfb;
+}
+
+.blue-bg {
+  background: #017dfb;
 }
 
 .gray-bg {

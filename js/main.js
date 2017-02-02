@@ -16,6 +16,12 @@ $(function() {
 
     menuButton.on("click", function(){
         $(this).toggleClass("change");
-        $("#nav-list").slideToggle(300);
+        $("#nav-list").toggleClass("display-flex");
+    });
+
+    var searchButton = $("#search-button");
+
+    searchButton.on("click", function(){
+        $("#inputs-list").toggleClass("display-flex");
     });
 });
